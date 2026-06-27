@@ -213,7 +213,6 @@ export default function App() {
           <h1 className="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
             <Activity className="text-emerald-400 animate-pulse" /> IoT <span className='text-blue-600' > Monitor </span>    
           </h1>
-          {/* <p className="text-sm text-slate-400 mt-1">MSc Thesis Performance Sandbox: Zustand vs Redux Toolkit</p> */}
         </div>
 
         {/* Real-time Diagnostics HUD */}
@@ -243,7 +242,7 @@ export default function App() {
       <section className="bg-slate-900 border border-slate-800 rounded-xl p-4 mb-8 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
         {/* State Engine Switcher */}
         <div>
-          <label className="block text-xs font-bold text-slate-400 uppercase mb-2 tracking-wide flex items-center gap-1.5">
+          <label className="text-xs font-bold text-slate-400 uppercase mb-2 tracking-wide flex items-center gap-1.5">
             <Cpu size={14} /> Active Architecture
           </label>
           <div className="grid grid-cols-2 gap-2 bg-slate-950 p-1 rounded-lg border border-slate-800">
@@ -274,7 +273,7 @@ export default function App() {
 
         {/* Telemetry Clock Frequency */}
         <div>
-          <label className="block text-xs font-bold text-slate-400 uppercase mb-2 tracking-wide flex items-center gap-1.5">
+          <label className="text-xs font-bold text-slate-400 uppercase mb-2 tracking-wide flex items-center gap-1.5">
             <Zap size={14} /> Server Pulse Frequency
           </label>
           <div className="grid grid-cols-3 gap-2 bg-slate-950 p-1 rounded-lg border border-slate-800">

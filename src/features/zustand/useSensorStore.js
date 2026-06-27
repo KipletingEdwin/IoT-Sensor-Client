@@ -2,6 +2,11 @@
 import { create } from 'zustand';
 import { INITIAL_SENSORS_STATE } from '../../constants/sensorSchema';
 
+/**
+ * Academic Context: Zustand State Store
+ * Uses a shallow merge strategy for granular, localized updates. 
+ * Minimises garbage collection overhead during high-frequency real-time updates.
+ */
 export const useSensorStore = create((set) => ({
   // Seed the store with initial baseline states
   sensors: INITIAL_SENSORS_STATE,
